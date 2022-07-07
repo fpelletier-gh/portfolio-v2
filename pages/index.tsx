@@ -24,11 +24,7 @@ export default function Home() {
   };
 
   return (
-    <Layout
-      scrollHandler={scrollHandler}
-      pageInView={pageInView}
-      setPageInView={setPageInView}
-    >
+    <Layout scrollHandler={scrollHandler} pageInView={pageInView}>
       <Head>
         <title>{siteTitle}</title>
       </Head>

@@ -5,12 +5,7 @@ import { Grid, Container, GridItem } from "@chakra-ui/react";
 
 export const siteTitle = "Francis Pelletier Portfolio";
 
-export default function Layout({
-  children,
-  scrollHandler,
-  pageInView,
-  setPageInView,
-}) {
+export default function Layout({ children, scrollHandler, pageInView }) {
   return (
     <Container variant="siteContainer" pt="4rem" pb="0">
       <Head>
@@ -18,11 +13,7 @@ export default function Layout({
         <meta name="Francis Portfolio" content="Francis Pelletier portfolio" />
         <meta name="og:title" content={siteTitle} />
       </Head>
-      <Header
-        scrollHandler={scrollHandler}
-        pageInView={pageInView}
-        setPageInView={setPageInView}
-      />
+      <Header scrollHandler={scrollHandler} pageInView={pageInView} />
       <Grid display="grid" templateColumns="repeat(4, 1fr)" w="100%" mx="auto">
         <GridItem
           as="main"
