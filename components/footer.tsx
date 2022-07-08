@@ -22,6 +22,7 @@ export default function Footer(props) {
         pt="50px"
         pb="420px"
         mt="220px"
+        {...props}
       >
         <HStack
           as="footer"

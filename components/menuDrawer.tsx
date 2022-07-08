@@ -69,8 +69,8 @@ export default function MenuDrawer({ scrollHandler, pageInView }) {
             </Flex>
           </DrawerBody>
 
-          <DrawerFooter p={0} m={0}>
-            <Footer w="20rem" />
+          <DrawerFooter p={0} m={0} maxH="130px">
+            <Footer w="20rem" pt="5px" mt="80px" />
           </DrawerFooter>
         </DrawerContent>
       </Drawer>
