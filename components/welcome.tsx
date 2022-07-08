@@ -57,7 +57,7 @@ export default function Welcome({ scrollRef, setPageInView }) {
         <Box
           display="flex"
           flexDir="column"
-          alignItems={["center", "start"]}
+          alignItems={["center", "center", "start"]}
           pt={[10, null]}
           px={6}
         >

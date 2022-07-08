@@ -52,6 +52,7 @@ export default function Projects({ scrollRef, setPageInView }) {
       transform="skewY(-5deg)"
       py="220px"
       my="220px"
+      px={{ lg: 10 }}
     >
       <MotionDiv
         ref={ref}

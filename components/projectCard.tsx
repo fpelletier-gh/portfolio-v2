@@ -88,8 +88,8 @@ export default function ProjectCard({
           onMouseLeave={handleImageMouseLeave}
           borderRadius="2xl"
           boxShadow="2xl"
-          w={["325px", "450px"]}
-          maxW={["325px", "450px"]}
+          w={["325px", "325px", "450px"]}
+          maxW={["325px", "325px", "450px"]}
           backgroundColor="black"
           {...rest}
         >
@@ -98,7 +98,7 @@ export default function ProjectCard({
             animate={controlImageOverlayAnimation}
             transition={{ duration: "0.5" }}
             variants={imageOverlayAnimation}
-            h={["325px", "450px"]}
+            h={["325px", "325px", "450px"]}
             borderRadius="2xl"
           >
             <ResponsiveImage src={imgSrc} borderRadius="2xl" />
@@ -117,7 +117,7 @@ export default function ProjectCard({
             <Heading
               as="h3"
               color={headingOverlayTextColor}
-              size={["md", "lg"]}
+              size={["md", "md", "lg"]}
               textAlign="left"
               pb={4}
             >
@@ -126,7 +126,7 @@ export default function ProjectCard({
             <Heading
               as="h5"
               color={headingOverlayTextColor}
-              size={["xs", "sm"]}
+              size={["xs", "xs", "sm"]}
               textAlign="left"
               pb={4}
               h="75px"
