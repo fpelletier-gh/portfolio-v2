@@ -35,7 +35,10 @@ export default function Projects({ scrollRef, setPageInView }) {
         setPageInView("projects");
       }
     } else {
-      if (entry?.boundingClientRect.y > 0) {
+      if (
+        entry?.boundingClientRect.y > 0 &&
+        entry?.boundingClientRect.y < 1500
+      ) {
         setPageInView("about");
       }
       controlAnimation.start("hidden");

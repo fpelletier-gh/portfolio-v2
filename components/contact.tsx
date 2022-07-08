@@ -95,7 +95,10 @@ export default function Contact({ scrollRef, setPageInView }) {
       setPageInView("contact");
     } else {
       controlAnimation.start("hidden");
-      if (entry?.boundingClientRect.y > 0) {
+      if (
+        entry?.boundingClientRect.y > 0 &&
+        entry?.boundingClientRect.y < 3000
+      ) {
         setPageInView("projects");
       }
     }

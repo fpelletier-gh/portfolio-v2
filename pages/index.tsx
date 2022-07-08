@@ -7,7 +7,7 @@ import Contact from "../components/contact";
 import Layout, { siteTitle } from "../components/layout";
 
 export default function Home() {
-  const [pageInView, setPageInView] = useState("");
+  const [pageInView, setPageInView] = useState("welcome");
   const pages = ["welcome", "about", "projects", "contact"];
   const scrollRefs = useRef([]);
 
@@ -15,7 +15,7 @@ export default function Home() {
     (_, i) => scrollRefs.current[i] ?? createRef()
   );
 
-  const scrollHandler = (index, scrollBehavior = "smooth") => {
+  const scrollHandler = (index = 0, scrollBehavior = "smooth") => {
     scrollRefs.current[index].current.scrollIntoView({
       block: "center",
       behavior: scrollBehavior,
