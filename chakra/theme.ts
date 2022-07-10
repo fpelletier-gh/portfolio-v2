@@ -74,7 +74,7 @@ const Heading = {
   }),
   variants: {
     teal: (props) => ({
-      color: mode("teal.800", "teal.300")(props),
+      color: mode("teal.900", "teal.300")(props),
     }),
   },
   defaultProps: {
@@ -102,13 +102,16 @@ const Link = {
     letterSpacing: "wider",
     fontWeight: "semibold",
     textDecoration: "none",
+    color: mode("teal.900", "teal.300")(props),
+    borderColor: mode("teal.900", "teal.300")(props),
   }),
   variants: {
     navigation: (props) => ({
+      color: mode("teal.900", "teal.300")(props),
+      borderColor: mode("teal.900", "teal.300")(props),
       _hover: {
         textDecoration: "none",
-        borderColor: mode("teal.600", "teal.300")(props),
-        color: mode("teal.600", "teal.300")(props),
+        borderBottom: "3px solid",
       },
     }),
     imageOverlay: (props) => ({
@@ -123,6 +126,7 @@ const Link = {
     logo: {
       _hover: {
         textDecoration: "none",
+        borderBottom: "none",
       },
     },
   },
@@ -130,14 +134,15 @@ const Link = {
 
 const Text = {
   baseStyle: {
-    pb: "1.1rem",
+    pb: "1.2rem",
   },
   variants: {
     teal: (props) => ({
-      _hover: {
-        color: mode("teal.600", "teal.300")(props),
-      },
+      color: mode("teal.900", "teal.300")(props),
     }),
+  },
+  defaultProps: {
+    variant: "teal",
   },
 };
 
@@ -157,10 +162,11 @@ const global = (props) => ({
   a: {
     letterSpacing: "widest",
     textDecoration: "none",
+    color: mode("teal.900", "teal.300")(props),
+    borderColor: mode("teal.900", "teal.300")(props),
     _hover: {
       textDecoration: "none",
-      borderColor: mode("teal.600", "teal.300")(props),
-      color: mode("teal.600", "teal.300")(props),
+      borderBottom: "3px solid",
     },
   },
 });

@@ -84,9 +84,9 @@ export default function Header({ scrollHandler, pageInView }) {
               _hover={{ background: "transparent" }}
             >
               {colorMode === "light" ? (
-                <MoonIcon _hover={{ color: "teal.600" }} />
+                <MoonIcon color="teal.900" _hover={{ color: "teal.700" }} />
               ) : (
-                <SunIcon _hover={{ color: "teal.300" }} />
+                <SunIcon color="teal.300" _hover={{ color: "teal.100" }} />
               )}
             </Button>
             <MenuDrawer scrollHandler={scrollHandler} pageInView={pageInView} />

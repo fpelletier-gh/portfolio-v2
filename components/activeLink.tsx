@@ -7,7 +7,6 @@ function ActiveLink(props: any) {
   const router = useRouter();
   const href = props.href;
   const isInternalLink = href && (href.startsWith("/") || href.startsWith("#"));
-  const linkColor = useColorModeValue("teal.600", "teal.300");
 
   const handleClick = (e: any) => {
     e.preventDefault();
@@ -20,7 +19,7 @@ function ActiveLink(props: any) {
         <Link
           variant="navigation"
           onClick={handleClick}
-          color={router.asPath === href ? linkColor : null}
+          borderBottom={router.asPath === href ? "3px solid" : null}
           {...props}
         >
           {props.children}
