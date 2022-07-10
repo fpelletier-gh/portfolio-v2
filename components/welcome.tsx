@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 export default function Welcome({ scrollRef, setPageInView }) {
   const bgGradient = useColorModeValue(
-    "linear(to-t, teal.200, blue.400)",
+    "linear(to-t, teal.200, blue.300)",
     "linear(to-t, teal.900, blue.900)"
   );
 

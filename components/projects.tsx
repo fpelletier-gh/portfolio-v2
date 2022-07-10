@@ -22,7 +22,7 @@ export default function Projects({ scrollRef, setPageInView }) {
   };
 
   const bgGradient = useColorModeValue(
-    "linear(to-t, blue.400, teal.200)",
+    "linear(to-t, blue.300, teal.200)",
     "linear(to-t, blue.900, teal.900)"
   );
 

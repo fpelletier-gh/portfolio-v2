@@ -10,7 +10,7 @@ import { BsGithub, BsCodeSlash, BsLinkedin } from "react-icons/bs";
 
 export default function Footer(props) {
   const bgGradient = useColorModeValue(
-    "linear(to-t, teal.200, blue.400)",
+    "linear(to-t, teal.200, blue.300)",
     "linear(to-t, teal.800, blue.900)"
   );
 
