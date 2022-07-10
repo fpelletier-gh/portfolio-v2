@@ -7,6 +7,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import ProjectCard from "./projectCard";
+import ActiveLink from "./activeLink";
 import boxShadowImg from "../public/box-shadow-card.png";
 import noteAppImg from "../public/note-card.png";
 import { MotionDiv } from "../components/animation";
@@ -124,6 +125,12 @@ export default function Projects({ scrollRef, setPageInView }) {
             githubUrl="https://github.com/fpelletier-gh/note-app"
           />
         </SimpleGrid>
+        <Text textAlign="center" fontSize="1.2rem" pt="5rem">
+          For more projects and my neovim config see my{" "}
+          <ActiveLink href="https://github.com/fpelletier-gh">
+            Github Profile
+          </ActiveLink>
+        </Text>
       </MotionDiv>
     </Box>
   );
