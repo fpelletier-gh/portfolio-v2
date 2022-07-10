@@ -25,6 +25,7 @@ export default function ProjectCard({
   ...rest
 }) {
   const headingOverlayTextColor = useColorModeValue("gray.200", "gray.400");
+  const [overlayVisible, setOverlayVisible] = useState(false);
 
   const cardAnimation = {
     hidden: { opacity: 0, y: 150, scale: 1 },
@@ -59,12 +60,14 @@ export default function ProjectCard({
     controlTextOverlayAnimation.start("visible");
     controlCardAnimation.start("zoom");
     controlImageOverlayAnimation.start("overlay");
+    setOverlayVisible(true);
   };
 
   const handleImageMouseLeave = () => {
     controlTextOverlayAnimation.start("hidden");
     controlCardAnimation.start("visible");
     controlImageOverlayAnimation.start("noOverlay");
+    setOverlayVisible(false);
   };
 
   return (
@@ -137,13 +140,29 @@ export default function ProjectCard({
               {description}
             </Heading>
             <Flex textAlign="left" alignContent="center">
-              <ActiveLink href={livePreviewUrl} variant="imageOverlay">
+              <ActiveLink
+                href={livePreviewUrl}
+                variant="imageOverlay"
+                onClick={(e) => {
+                  if (!overlayVisible) {
+                    e.preventDefault();
+                  }
+                }}
+              >
                 Live Preview
                 <ExternalLinkIcon ml={2} mb={1} />
               </ActiveLink>
             </Flex>
             <Box textAlign="left" mt={2}>
-              <ActiveLink href={githubUrl} variant="imageOverlay">
+              <ActiveLink
+                href={githubUrl}
+                variant="imageOverlay"
+                onClick={(e) => {
+                  if (!overlayVisible) {
+                    e.preventDefault();
+                  }
+                }}
+              >
                 Github Repository
                 <ExternalLinkIcon ml={2} mb={1} />
               </ActiveLink>
