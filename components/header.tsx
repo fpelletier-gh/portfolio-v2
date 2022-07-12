@@ -20,7 +20,7 @@ export default function Header({ scrollHandler, pageInView }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const bgColorModeValue = useColorModeValue(
     "whiteAlpha.600",
-    "blackAlpha.600"
+    "blackAlpha.800"
   );
   const bgColor = lastScrollY <= 100 ? "transparent" : bgColorModeValue;
   const shadow = lastScrollY > 100 ? "md" : null;
