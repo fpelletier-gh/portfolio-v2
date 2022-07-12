@@ -8,7 +8,7 @@ import { useEffect } from "react";
 
 export default function About({ scrollRef, setPageInView }) {
   const variants = {
-    hidden: { opacity: 0, y: 150 },
+    hidden: { opacity: 0, y: 100 },
     visible: { opacity: 1, y: 0 },
   };
 
@@ -41,9 +41,8 @@ export default function About({ scrollRef, setPageInView }) {
         textAlign="center"
       >
         <Flex
-          ref={scrollRef}
           direction={["column", "column", "row"]}
-          py={[10, 10]}
+          py={["6rem", 10]}
           px={[6, null]}
           mx="auto"
           maxW="1024px"
@@ -65,6 +64,7 @@ export default function About({ scrollRef, setPageInView }) {
             </Text>
           </Flex>
           <Flex
+            ref={scrollRef}
             justifyContent="center"
             minW={200}
             minH={200}

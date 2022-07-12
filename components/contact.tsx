@@ -119,7 +119,6 @@ export default function Contact({ scrollRef, setPageInView }) {
         textAlign="center"
       >
         <Flex
-          ref={scrollRef}
           as="main"
           direction="column"
           alignItems={"stretch"}
@@ -157,6 +156,7 @@ export default function Contact({ scrollRef, setPageInView }) {
           </Heading>
           <Heading
             as="h5"
+            ref={scrollRef}
             size="sm"
             mb={8}
             fontWeight="semibold"
