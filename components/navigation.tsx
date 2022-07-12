@@ -1,5 +1,5 @@
 import ActiveLink from "./activeLink";
-import { Flex } from "@chakra-ui/react";
+import { Flex, useColorModeValue } from "@chakra-ui/react";
 
 export default function Navigation({
   scrollHandler,
@@ -8,7 +8,7 @@ export default function Navigation({
   home,
   ...props
 }) {
-  const borderStyle = "3px solid";
+  const borderColor = useColorModeValue("teal.800", "teal.300");
 
   const handleLinkClick = (e) => {
     e.preventDefault();
@@ -27,7 +27,7 @@ export default function Navigation({
       <ActiveLink
         id="0"
         href="#home"
-        borderBottom={pageInView === "welcome" ? borderStyle : null}
+        borderBottomColor={pageInView === "welcome" ? borderColor : null}
         onClick={handleLinkClick}
         display={home ? { base: "block", md: "block" } : "none"}
         m={4}
@@ -39,7 +39,7 @@ export default function Navigation({
       <ActiveLink
         id="1"
         href="#about"
-        borderBottom={pageInView === "about" ? borderStyle : null}
+        borderBottomColor={pageInView === "about" ? borderColor : null}
         onClick={handleLinkClick}
         display={{ base: "block", md: "block" }}
         m={4}
@@ -52,7 +52,7 @@ export default function Navigation({
         id="2"
         href="#projects"
         onClick={handleLinkClick}
-        borderBottom={pageInView === "projects" ? borderStyle : null}
+        borderBottomColor={pageInView === "projects" ? borderColor : null}
         display={{ base: "block", md: "block" }}
         m={4}
         alignSelf="center"
@@ -64,7 +64,7 @@ export default function Navigation({
         id="3"
         href="#contact"
         onClick={handleLinkClick}
-        borderBottom={pageInView === "contact" ? borderStyle : null}
+        borderBottomColor={pageInView === "contact" ? borderColor : null}
         display={{ base: "block", md: "block" }}
         m={4}
         alignSelf="center"

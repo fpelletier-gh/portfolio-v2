@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import NextLink from "next/link";
 import { Link } from "@chakra-ui/react";
-import { useColorModeValue } from "@chakra-ui/react";
 
 function ActiveLink(props: any) {
   const router = useRouter();
@@ -16,12 +15,7 @@ function ActiveLink(props: any) {
   if (isInternalLink) {
     return (
       <NextLink href={href} passHref>
-        <Link
-          variant="navigation"
-          onClick={handleClick}
-          borderBottom={router.asPath === href ? "3px solid" : null}
-          {...props}
-        >
+        <Link variant="navigation" onClick={handleClick} {...props}>
           {props.children}
         </Link>
       </NextLink>
