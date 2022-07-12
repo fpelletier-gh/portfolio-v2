@@ -30,7 +30,6 @@ export default function ProjectCard({
   const cardAnimation = {
     hidden: { opacity: 0, y: 150, scale: 1 },
     visible: { opacity: 1, y: 0, scale: 1 },
-    zoom: { opacity: 1, scale: 1.05, transition: { duration: "0.5" } },
   };
 
   const imageOverlayAnimation = {
@@ -58,7 +57,6 @@ export default function ProjectCard({
 
   const handleImageMouseEnter = () => {
     controlTextOverlayAnimation.start("visible");
-    controlCardAnimation.start("zoom");
     controlImageOverlayAnimation.start("overlay");
     setOverlayVisible(true);
   };
@@ -139,10 +137,11 @@ export default function ProjectCard({
             >
               {description}
             </Heading>
-            <Flex textAlign="left" alignContent="center">
+            <Box textAlign="left">
               <ActiveLink
                 href={livePreviewUrl}
                 variant="imageOverlay"
+                pb={1}
                 onClick={(e) => {
                   if (!overlayVisible) {
                     e.preventDefault();
@@ -152,11 +151,12 @@ export default function ProjectCard({
                 Live Preview
                 <ExternalLinkIcon ml={2} mb={1} />
               </ActiveLink>
-            </Flex>
+            </Box>
             <Box textAlign="left" mt={2}>
               <ActiveLink
                 href={githubUrl}
                 variant="imageOverlay"
+                pb={1}
                 onClick={(e) => {
                   if (!overlayVisible) {
                     e.preventDefault();
