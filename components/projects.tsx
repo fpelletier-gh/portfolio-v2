@@ -8,8 +8,10 @@ import {
 } from "@chakra-ui/react";
 import ProjectCard from "./projectCard";
 import ActiveLink from "./activeLink";
-import boxShadowImg from "../public/box-shadow-card.png";
-import noteAppImg from "../public/note-card.png";
+import boxShadowGeneratorImg from "../public/box-shadow-generator.jpg";
+import noteAppImg from "../public/note-app.jpg";
+import wdNotesImg from "../public/wd-notes.jpg";
+import githubFinderImg from "../public/github-finder.jpg";
 import { MotionDiv } from "../components/animation";
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -93,15 +95,30 @@ export default function Projects({ scrollRef, setPageInView }) {
           alignContent="center"
         >
           <ProjectCard
+            imgSrc={wdNotesImg}
+            tags={[
+              "Next Js",
+              "typescript",
+              "Chakra",
+              "Javascript",
+              "html",
+              "css",
+            ]}
+            title="Web Development Notes"
+            description="Documentation website built with NextJs to generate pages from MDX files from the posts directory and generate a navigation menu from subfolders in the posts directory."
+            livePreviewUrl="https://web-development-notes.vercel.app/"
+            githubUrl="https://github.com/fpelletier-gh/web-development-notes"
+          />
+          <ProjectCard
             imgSrc={noteAppImg}
-            tags={["Html", "Css", "Javascript", "Gatsby", "Typescript"]}
+            tags={["javascript", "typescript"]}
             title="Note App"
-            description="A simple note taking application built with GatsbyA simple note taking application built with Gatsby"
+            description="A simple note taking application built with Gatsby"
             livePreviewUrl="https://francisnoteapp.netlify.app/"
             githubUrl="https://github.com/fpelletier-gh/note-app"
           />
           <ProjectCard
-            imgSrc={boxShadowImg}
+            imgSrc={githubFinderImg}
             tags={["javascript", "typescript"]}
             title="Github Finder"
             description="Find Github user by username"
@@ -109,24 +126,17 @@ export default function Projects({ scrollRef, setPageInView }) {
             githubUrl="https://github.com/fpelletier-gh/github-finder"
           />
           <ProjectCard
-            imgSrc={boxShadowImg}
+            imgSrc={boxShadowGeneratorImg}
             tags={["javascript", "typescript"]}
-            title="Note App"
+            title="Box-Shadow Generator"
             description="A simple note taking application built with Gatsby"
-            livePreviewUrl="https://francisnoteapp.netlify.app/"
-            githubUrl="https://github.com/fpelletier-gh/note-app"
-          />
-          <ProjectCard
-            imgSrc={boxShadowImg}
-            tags={["javascript", "typescript"]}
-            title="Note App"
-            description="A simple note taking application built with Gatsby"
-            livePreviewUrl="https://francisnoteapp.netlify.app/"
-            githubUrl="https://github.com/fpelletier-gh/note-app"
+            livePreviewUrl="https://boxshadowgenerator.netlify.app/"
+            githubUrl="https://github.com/fpelletier-gh/box-shadow-generator"
           />
         </SimpleGrid>
-        <Text textAlign="center" fontSize="1.2rem" pt="5rem">
-          For more projects and my neovim config see my{" "}
+        <Text textAlign="center" fontSize="1.2rem" pt="5rem" px={[6, 10]}>
+          For more projects, this portfolio source code and my neovim config see
+          my{" "}
           <ActiveLink
             href="https://github.com/fpelletier-gh"
             variant="navigation"

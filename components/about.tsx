@@ -1,6 +1,6 @@
 import ResponsiveImage from "../components/responsiveImage";
 import { Heading, Text, Flex } from "@chakra-ui/react";
-import aboutPhoto from "../public/AboutPhoto.jpg";
+import aboutPhoto from "../public/about-photo.jpg";
 import { MotionDiv } from "../components/animation";
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
