@@ -1,10 +1,8 @@
-import Head from "next/head";
 import { useState } from "react";
 import { MotionDiv } from "../components/animation";
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import Layout, { siteTitle } from "../components/layout";
 import {
   Alert,
   AlertIcon,
