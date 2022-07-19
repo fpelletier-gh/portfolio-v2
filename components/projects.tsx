@@ -96,22 +96,15 @@ export default function Projects({ scrollRef, setPageInView }) {
         >
           <ProjectCard
             imgSrc={wdNotesImg}
-            tags={[
-              "Next Js",
-              "typescript",
-              "Chakra",
-              "Javascript",
-              "html",
-              "css",
-            ]}
+            tags={["Next Js", "typescript", "Chakra", "html", "css"]}
             title="Web Development Notes"
-            description="Documentation website built with NextJs to generate pages from MDX files from the posts directory and generate a navigation menu from subfolders in the posts directory."
+            description="Documentation website built with NextJs to generate pages from MDX files from the posts directory and subdirectory"
             livePreviewUrl="https://web-development-notes.vercel.app/"
             githubUrl="https://github.com/fpelletier-gh/web-development-notes"
           />
           <ProjectCard
             imgSrc={noteAppImg}
-            tags={["javascript", "typescript"]}
+            tags={["Gatsby", "Javascript", "Css", "Html"]}
             title="Note App"
             description="A simple note taking application built with Gatsby"
             livePreviewUrl="https://francisnoteapp.netlify.app/"
@@ -119,7 +112,7 @@ export default function Projects({ scrollRef, setPageInView }) {
           />
           <ProjectCard
             imgSrc={githubFinderImg}
-            tags={["javascript", "typescript"]}
+            tags={["Javascript", "Webpack", "Bootstrap", "Html"]}
             title="Github Finder"
             description="Find Github user by username"
             livePreviewUrl="https://francis-github-finder.netlify.app/"
@@ -127,7 +120,7 @@ export default function Projects({ scrollRef, setPageInView }) {
           />
           <ProjectCard
             imgSrc={boxShadowGeneratorImg}
-            tags={["javascript", "typescript"]}
+            tags={["Javascript", "Css", "Html"]}
             title="Box-Shadow Generator"
             description="A simple note taking application built with Gatsby"
             livePreviewUrl="https://boxshadowgenerator.netlify.app/"
