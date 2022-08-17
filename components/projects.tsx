@@ -8,6 +8,7 @@ import {
 } from "@chakra-ui/react";
 import ProjectCard from "./projectCard";
 import ActiveLink from "./activeLink";
+import babyJournalImg from "../public/baby-journal.jpg";
 import boxShadowGeneratorImg from "../public/box-shadow-generator.jpg";
 import noteAppImg from "../public/note-app.jpg";
 import wdNotesImg from "../public/wd-notes.jpg";
@@ -95,42 +96,58 @@ export default function Projects({ scrollRef, setPageInView }) {
           alignContent="center"
         >
           <ProjectCard
+            imgSrc={babyJournalImg}
+            tags={[
+              "Python",
+              "Django",
+              "Bootstrap",
+              "PostgreSql",
+              "MVC",
+              "html",
+            ]}
+            title="Baby Journal"
+            description="Keep a record of all the important events happening while your baby's growing"
+            livePreviewUrl="https://babyjournal.francispelletier.ca"
+            githubUrl="https://github.com/fpelletier-gh/baby-journal-MVC"
+          />
+          <ProjectCard
             imgSrc={wdNotesImg}
             tags={[
               "Next Js",
-              "typescript",
-              "Chakra",
+              "Typescript",
+              "React",
+              "Chakra ui",
               "Javascript",
-              "html",
-              "css",
+              "Markdown",
+              "Html",
             ]}
             title="Web Development Notes"
-            description="Documentation website built with NextJs to generate pages from MDX files from the posts directory and generate a navigation menu from subfolders in the posts directory."
-            livePreviewUrl="https://web-development-notes.vercel.app/"
+            description="A website for all kind of notes about web development"
+            livePreviewUrl="https://webdevelopmentnotes.francispelletier.ca"
             githubUrl="https://github.com/fpelletier-gh/web-development-notes"
           />
           <ProjectCard
             imgSrc={noteAppImg}
-            tags={["javascript", "typescript"]}
+            tags={["Javascript", "React", "Gatsby", "Css", "Html"]}
             title="Note App"
             description="A simple note taking application built with Gatsby"
-            livePreviewUrl="https://francisnoteapp.netlify.app/"
+            livePreviewUrl="https://noteapp.francispelletier.ca"
             githubUrl="https://github.com/fpelletier-gh/note-app"
           />
           <ProjectCard
             imgSrc={githubFinderImg}
-            tags={["javascript", "typescript"]}
+            tags={["Javascript", "Bootstrap", "Webpack", "Html"]}
             title="Github Finder"
             description="Find Github user by username"
-            livePreviewUrl="https://francis-github-finder.netlify.app/"
+            livePreviewUrl="https://githubfinder.francispelletier.ca"
             githubUrl="https://github.com/fpelletier-gh/github-finder"
           />
           <ProjectCard
             imgSrc={boxShadowGeneratorImg}
-            tags={["javascript", "typescript"]}
+            tags={["Javascript", "Css", "Html"]}
             title="Box-Shadow Generator"
-            description="A simple note taking application built with Gatsby"
-            livePreviewUrl="https://boxshadowgenerator.netlify.app/"
+            description="A simple visual tool for generating css box-shadow"
+            livePreviewUrl="https://boxshadow.francispelletier.ca"
             githubUrl="https://github.com/fpelletier-gh/box-shadow-generator"
           />
         </SimpleGrid>
