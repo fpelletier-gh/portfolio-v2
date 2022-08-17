@@ -126,28 +126,32 @@ export default function Contact({ scrollRef, setPageInView }) {
           <Alert
             status="success"
             display={isMessageSent ? "flex" : "none"}
+            maxW="40rem"
+            alignSelf="center"
             textAlign="center"
-            flexDirection={["column", "row"]}
-            alignItems={["center", "left"]}
-            justifyContent={["center"]}
+            flexDirection="column"
+            alignItems="center"
+            justifyContent="center"
           >
-            <AlertIcon />
-            <AlertTitle my={[1, 0]}>Message sent!</AlertTitle>
-            <AlertDescription>
+            <AlertIcon my={2} />
+            <AlertTitle mb={1}>Message sent!</AlertTitle>
+            <AlertDescription mb={2}>
               Thanks for sending me a message. I'll get back to you soon.
             </AlertDescription>
           </Alert>
           <Alert
             status="error"
             display={isMessageError ? "flex" : "none"}
+            maxW="40rem"
+            alignSelf="center"
             textAlign="center"
-            flexDirection={["column", "row"]}
-            alignItems={["center", "left"]}
-            justifyContent={["center"]}
+            flexDirection="column"
+            alignItems="center"
+            justifyContent="center"
           >
-            <AlertIcon />
-            <AlertTitle my={[1, 0]}>Someting went wrong!</AlertTitle>
-            <AlertDescription>Please try again</AlertDescription>
+            <AlertIcon my={2} />
+            <AlertTitle mb={1}>Someting went wrong!</AlertTitle>
+            <AlertDescription mb={2}>Please try again</AlertDescription>
           </Alert>
           <Heading id="contact" as="h2" size="xl" my={6} textAlign="center">
             Contact me
