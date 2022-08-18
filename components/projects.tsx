@@ -103,7 +103,7 @@ export default function Projects({ scrollRef, setPageInView }) {
               "Bootstrap",
               "PostgreSql",
               "MVC",
-              "html",
+              "Html",
             ]}
             title="Baby Journal"
             description="Keep a record of all the important events happening while your baby's growing"
@@ -119,7 +119,6 @@ export default function Projects({ scrollRef, setPageInView }) {
               "Chakra ui",
               "Javascript",
               "Markdown",
-              "Html",
             ]}
             title="Web Development Notes"
             description="A website for all kind of notes about web development"
@@ -128,9 +127,9 @@ export default function Projects({ scrollRef, setPageInView }) {
           />
           <ProjectCard
             imgSrc={noteAppImg}
-            tags={["Javascript", "React", "Gatsby", "Css", "Html"]}
+            tags={["Javascript", "React", "Gatsby", "Css", "Html", "Pwa"]}
             title="Note App"
-            description="A simple note taking application built with Gatsby"
+            description="A simple note taking application (Pwa) built with Gatsby"
             livePreviewUrl="https://noteapp.francispelletier.ca"
             githubUrl="https://github.com/fpelletier-gh/note-app"
           />
