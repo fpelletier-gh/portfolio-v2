@@ -124,24 +124,26 @@ export default function ProjectCard({
             >
               {title}
             </Heading>
-            <Heading
-              as="h5"
+            <Text
+              display="flex"
+              justifyContent="left"
+              alignItems={["center", "center", "flex-start"]}
               color={headingOverlayTextColor}
-              size={["xs", "xs", "sm"]}
+              fontSize={["sm", "sm", "md"]}
               textAlign="left"
-              pb={4}
               h="75px"
               maxH="75px"
               minH="75px"
               overflow="hidden"
             >
-              {description}
-            </Heading>
+              <span>{description}</span>
+            </Text>
             <Box textAlign="left">
               <ActiveLink
                 href={livePreviewUrl}
                 variant="imageOverlay"
-                pb={1}
+                fontSize={["sm", "sm", "md"]}
+                fontWeight="regular"
                 onClick={(e) => {
                   if (!overlayVisible) {
                     e.preventDefault();
@@ -152,10 +154,12 @@ export default function ProjectCard({
                 <ExternalLinkIcon ml={2} mb={1} />
               </ActiveLink>
             </Box>
-            <Box textAlign="left" mt={2}>
+            <Box textAlign="left" mt={1}>
               <ActiveLink
                 href={githubUrl}
                 variant="imageOverlay"
+                fontSize={["sm", "sm", "md"]}
+                fontWeight="regular"
                 pb={1}
                 onClick={(e) => {
                   if (!overlayVisible) {
@@ -167,12 +171,12 @@ export default function ProjectCard({
                 <ExternalLinkIcon ml={2} mb={1} />
               </ActiveLink>
             </Box>
-            <Flex justifyContent="left" wrap="wrap" pt={4}>
+            <Flex justifyContent="left" wrap="wrap" pt={2}>
               {tags.map((tag, index) => {
                 return (
                   <Tag
                     key={index}
-                    size="md"
+                    size={["sm", "sm", "md"]}
                     borderRadius="full"
                     variant="solid"
                     colorScheme="teal"
