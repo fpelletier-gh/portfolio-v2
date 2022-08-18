@@ -6,7 +6,6 @@ import {
   Text,
   Flex,
   Box,
-  SimpleGrid,
   Tag,
   useColorModeValue,
 } from "@chakra-ui/react";
