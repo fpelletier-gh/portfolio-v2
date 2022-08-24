@@ -1,6 +1,6 @@
 # Francis Pelletier Portfolio
 
-A website showcasing some of my work
+A website showcasing some of my works
 
 [Live preview](https://francispelletier.ca/)
 
