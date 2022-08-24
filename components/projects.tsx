@@ -127,7 +127,7 @@ export default function Projects({ scrollRef, setPageInView }) {
           />
           <ProjectCard
             imgSrc={noteAppImg}
-            tags={["Javascript", "React", "Gatsby", "Css", "Html", "Pwa"]}
+            tags={["Javascript", "React", "Gatsby", "Sass", "Html", "Pwa"]}
             title="Note App"
             description="A simple note taking application (Pwa) built with Gatsby"
             livePreviewUrl="https://noteapp.francispelletier.ca"
