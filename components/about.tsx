@@ -59,8 +59,10 @@ export default function About({ scrollRef, setPageInView }) {
               About Me
             </Heading>
             <Text textAlign={["center", "center", "right"]} fontSize="1.2rem">
-              I'm a frontend developer pationate about everything related to web
-              development, javascript, react, linux and vim.
+              I am a developer, who aims to work with businesses to bring their
+              goals and their passion to life. Also, I like exploring new
+              technologies from frontend to backend. If you’re looking for a
+              developer to add to your team, i’d love to hear from you!
             </Text>
           </Flex>
           <Flex
