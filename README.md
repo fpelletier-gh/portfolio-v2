@@ -1,34 +1,88 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Francis Pelletier Portfolio
 
-## Getting Started
+A website showcasing some of my work
 
-First, run the development server:
+[Live preview](https://francispelletier.ca/)
 
-```bash
-npm run dev
-# or
-yarn dev
+## Table of Contents
+
+<!-- vim-markdown-toc GFM -->
+
+- [Features](#features)
+- [Requirements](#requirements)
+  - [Node js LTS](#node-js-lts)
+- [Installation](#installation)
+  - [Development](#development)
+  - [Install Dependency](#install-dependency)
+  - [Development Server](#development-server)
+  - [Production](#production)
+  - [Deployment](#deployment)
+
+<!-- vim-markdown-toc -->
+
+## Features
+
+- [Next js](https://nextjs.org/)
+- [Chakra ui](https://chakra-ui.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Formik](https://formik.org/)
+- [Nodemailler](https://nodemailer.com/about/)
+
+## Requirements
+
+- `Node js LTS` ([Node.js](https://nodejs.org/en/download/))
+
+### Node js LTS
+
+Assuming you have [Node Version Manager](https://github.com/nvm-sh/nvm) installed
+
+```
+$ nvm install --lts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Development
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Clone the repository
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+$ git clone https://github.com/fpelletier-gh/portfolio-v2
+```
 
-## Learn More
+Change directory
 
-To learn more about Next.js, take a look at the following resources:
+```
+$ cd portfolio-v2
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Install Dependency
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Install node module
 
-## Deploy on Vercel
+```
+$ npm install
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Development Server
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Launch the development server
+
+```
+$ npm run dev
+```
+
+### Production
+
+Create the production build
+
+```
+$ npm run build
+```
+
+### Deployment
+
+Some Deployment options
+
+- [Vercel](https://vercel.com/) (Recomended)
+- [Netlify](https://netlify.com/)
