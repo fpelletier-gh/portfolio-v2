@@ -151,15 +151,17 @@ export default function Projects({ scrollRef, setPageInView }) {
           />
         </SimpleGrid>
         <Text textAlign="center" fontSize="1.2rem" pt="5rem" px={[6, 10]}>
-          For more projects, this portfolio source code and my neovim config see
-          my{" "}
+          For more projects, this portfolio source code, my linux and neovim
+          configs, visit my{" "}
+        </Text>
+        <Heading as="h3" size="lg">
           <ActiveLink
             href="https://github.com/fpelletier-gh"
             variant="navigation"
           >
             Github Profile
           </ActiveLink>
-        </Text>
+        </Heading>
       </MotionDiv>
     </Box>
   );
