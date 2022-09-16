@@ -1,10 +1,12 @@
 import ResponsiveImage from "../components/responsiveImage";
+import Certifications from "../components/certifications";
 import { Heading, Text, Flex } from "@chakra-ui/react";
 import aboutPhoto from "../public/about-photo.jpg";
 import { MotionDiv } from "../components/animation";
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import TechIcons from "./techIcons";
 
 export default function About({ scrollRef, setPageInView }) {
   const variants = {
@@ -59,10 +61,11 @@ export default function About({ scrollRef, setPageInView }) {
               About Me
             </Heading>
             <Text textAlign={["center", "center", "right"]} fontSize="1.2rem">
-              I am a developer, who aims to work with businesses to bring their
-              goals and their passion to life. Also, I like exploring new
-              technologies from frontend to backend. If you’re looking for a
-              developer to add to your team, i’d love to hear from you!
+              I am a front end developer, who aims to work with businesses to
+              bring their goals and their passion to life. Also, I like
+              exploring new technologies from frontend to backend. If you’re
+              looking for a developer to add to your team, i’d love to hear from
+              you!
             </Text>
           </Flex>
           <Flex
@@ -88,6 +91,7 @@ export default function About({ scrollRef, setPageInView }) {
         </Flex>{" "}
       </MotionDiv>
       <TechIcons />
+      <Certifications />
     </>
   );
 }
