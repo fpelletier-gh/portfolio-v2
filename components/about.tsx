@@ -87,6 +87,7 @@ export default function About({ scrollRef, setPageInView }) {
           </Flex>
         </Flex>{" "}
       </MotionDiv>
+      <TechIcons />
     </>
   );
 }
