@@ -1,10 +1,8 @@
-import ResponsiveImage from "../components/responsiveImage";
-import javascriptCertificationImg from "../public/javascript-certification.jpg";
-import webDesignCertificationImg from "../public/web-design-certification.jpg";
 import {
+  Box,
   Heading,
   Flex,
-  Box,
+  Text,
   Icon,
   Tooltip,
   useColorModeValue,
@@ -30,6 +28,7 @@ import {
   DiPostgresql,
   DiLinux,
   DiGithubFull,
+  DiDigitalOcean,
 } from "react-icons/di";
 import { SiTypescript, SiNextdotjs } from "react-icons/si";
 import { RiGatsbyFill } from "react-icons/ri";
@@ -54,7 +53,7 @@ export default function TechIcons() {
   };
 
   const controlAnimation = useAnimation();
-  const [ref, inView, entry] = useInView({ threshold: 0.2 });
+  const [ref, inView] = useInView({ threshold: 0.2 });
 
   useEffect(() => {
     if (inView) {
@@ -90,6 +89,9 @@ export default function TechIcons() {
         >
           Languages and Frameworks
         </Heading>
+        <Text textAlign="center">
+          Languages, frameworks and technologies that I've used in my projects
+        </Text>
         <Flex
           flexDirection="row"
           flexWrap="wrap"
@@ -116,6 +118,11 @@ export default function TechIcons() {
           <BoxedIcon icon={DiVisualstudio} color="#0076C6" tooltip="VScode" />
           <BoxedIcon icon={DiVim} color="#019331" tooltip="Vim & Neovim" />
           <BoxedIcon icon={RiGatsbyFill} color="#633194" tooltip="Gatsby" />
+          <BoxedIcon
+            icon={DiDigitalOcean}
+            color="#007CF7"
+            tooltip="DigitalOcean"
+          />
         </Flex>
       </MotionDiv>
     </>

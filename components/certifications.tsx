@@ -15,7 +15,7 @@ export default function Certifications() {
   };
 
   const controlAnimation = useAnimation();
-  const [ref, inView, entry] = useInView({ threshold: 0.2 });
+  const [ref, inView] = useInView({ threshold: 0.2 });
 
   useEffect(() => {
     if (inView) {
