@@ -116,6 +116,15 @@ const Link = {
         borderBottomColor: mode("teal.800", "teal.300")(props),
       },
     }),
+    ghLink: (props) => ({
+      color: mode("teal.800", "teal.200")(props),
+      borderBottom: "3px solid",
+      borderColor: "transparent",
+      _hover: {
+        textDecoration: "none",
+        borderBottomColor: mode("teal.800", "teal.200")(props),
+      },
+    }),
     imageOverlay: (props) => ({
       textDecoration: "none",
       color: mode("teal.200", "teal.200")(props),

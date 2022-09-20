@@ -155,10 +155,7 @@ export default function Projects({ scrollRef, setPageInView }) {
           configs, visit my{" "}
         </Text>
         <Heading as="h3" size="lg">
-          <ActiveLink
-            href="https://github.com/fpelletier-gh"
-            variant="navigation"
-          >
+          <ActiveLink href="https://github.com/fpelletier-gh" variant="ghLink">
             Github Profile
           </ActiveLink>
         </Heading>
