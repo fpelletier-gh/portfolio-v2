@@ -10,6 +10,7 @@ import ProjectCard from "./projectCard";
 import ActiveLink from "./activeLink";
 import babyJournalImg from "../public/baby-journal.jpg";
 import boxShadowGeneratorImg from "../public/box-shadow-generator.jpg";
+import pomodoroClockImg from "../public/pomodoro-clock.jpg";
 import noteAppImg from "../public/note-app.jpg";
 import wdNotesImg from "../public/wd-notes.jpg";
 import githubFinderImg from "../public/github-finder.jpg";
@@ -126,12 +127,12 @@ export default function Projects({ scrollRef, setPageInView }) {
             githubUrl="https://github.com/fpelletier-gh/web-development-notes"
           />
           <ProjectCard
-            imgSrc={noteAppImg}
-            tags={["Javascript", "React", "Gatsby", "Sass", "Html", "Pwa"]}
-            title="Note App"
-            description="A simple note taking application (Pwa) built with Gatsby"
-            livePreviewUrl="https://noteapp.francispelletier.ca"
-            githubUrl="https://github.com/fpelletier-gh/note-app"
+            imgSrc={pomodoroClockImg}
+            tags={["Vite.js", "Typescript", "React", "Sass"]}
+            title="Pomodoro Clock"
+            description="A simple pomodoro clock built with typescript, vite.js and sass"
+            livePreviewUrl="https://francis-pomodoro-clock.netlify.app"
+            githubUrl="https://github.com/fpelletier-gh/pomodoro-clock"
           />
           <ProjectCard
             imgSrc={githubFinderImg}
@@ -148,6 +149,14 @@ export default function Projects({ scrollRef, setPageInView }) {
             description="A simple visual tool for generating css box-shadow"
             livePreviewUrl="https://boxshadow.francispelletier.ca"
             githubUrl="https://github.com/fpelletier-gh/box-shadow-generator"
+          />
+          <ProjectCard
+            imgSrc={noteAppImg}
+            tags={["Javascript", "React", "Gatsby", "Sass", "Html", "Pwa"]}
+            title="Note App"
+            description="A simple note taking application (Pwa) built with Gatsby"
+            livePreviewUrl="https://noteapp.francispelletier.ca"
+            githubUrl="https://github.com/fpelletier-gh/note-app"
           />
         </SimpleGrid>
         <Text textAlign="center" fontSize="1.2rem" pt="5rem" px={[6, 10]}>
