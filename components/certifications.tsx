@@ -1,4 +1,5 @@
 import ResponsiveImage from "../components/responsiveImage";
+import frontEndCertificationImg from "../public/front-end-certification-img.jpg";
 import javascriptCertificationImg from "../public/javascript-certification.jpg";
 import webDesignCertificationImg from "../public/web-design-certification.jpg";
 import { Heading, Flex, Box } from "@chakra-ui/react";
@@ -55,11 +56,11 @@ export default function Certifications() {
         >
           <ActiveLink
             m={5}
-            href="https://freecodecamp.org/certification/francispelletier/responsive-web-design"
+            href="https://freecodecamp.org/certification/francispelletier/front-end-development-libraries"
           >
             <Box>
               <ResponsiveImage
-                src={webDesignCertificationImg}
+                src={frontEndCertificationImg}
                 width={300}
                 height={250}
                 w="auto"
@@ -74,6 +75,20 @@ export default function Certifications() {
             <Box>
               <ResponsiveImage
                 src={javascriptCertificationImg}
+                width={300}
+                height={250}
+                w="auto"
+                h="auto"
+              />
+            </Box>
+          </ActiveLink>
+          <ActiveLink
+            m={5}
+            href="https://freecodecamp.org/certification/francispelletier/responsive-web-design"
+          >
+            <Box>
+              <ResponsiveImage
+                src={webDesignCertificationImg}
                 width={300}
                 height={250}
                 w="auto"
