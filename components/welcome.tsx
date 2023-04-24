@@ -44,7 +44,7 @@ export default function Welcome({ scrollRef, setPageInView }) {
       <MotionDiv
         initial="hidden"
         animate={controlAnimation}
-        transition={{ duration: "1" }}
+        transition={{ duration: "0.5" }}
         variants={firstHeading}
         display="flex"
         flexDirection="column"
@@ -64,7 +64,7 @@ export default function Welcome({ scrollRef, setPageInView }) {
           <Heading ref={ref} as="h2" size={["2xl", "3xl"]} my={[6, 8]}>
             Hi, I'm Francis.
           </Heading>
-          <MotionDiv variants={secondHeading} transition={{ duration: "2" }}>
+          <MotionDiv variants={secondHeading} transition={{ duration: "1" }}>
             <Heading as="h2" size={["lg", "2xl"]} mb={4}>
               I like building things for the web.
             </Heading>

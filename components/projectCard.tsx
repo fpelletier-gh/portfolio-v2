@@ -73,7 +73,7 @@ export default function ProjectCard({
         ref={ref}
         initial="hidden"
         animate={controlCardAnimation}
-        transition={{ duration: "1" }}
+        transition={{ duration: "0.5" }}
         variants={cardAnimation}
         display="flex"
         flexDirection="column"

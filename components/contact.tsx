@@ -108,7 +108,7 @@ export default function Contact({ scrollRef, setPageInView }) {
         ref={ref}
         initial="hidden"
         animate={controlAnimation}
-        transition={{ duration: "1" }}
+        transition={{ duration: "0.5" }}
         variants={variants}
         display="flex"
         flexDirection="column"
