@@ -9,11 +9,9 @@ import {
 import ProjectCard from "./projectCard";
 import ActiveLink from "./activeLink";
 import babyJournalImg from "../public/baby-journal.jpg";
-import boxShadowGeneratorImg from "../public/box-shadow-generator.jpg";
 import pomodoroClockImg from "../public/pomodoro-clock.jpg";
-import noteAppImg from "../public/note-app.jpg";
 import wdNotesImg from "../public/wd-notes.jpg";
-import githubFinderImg from "../public/github-finder.jpg";
+import darkBackground from "../public/dark_background.jpg";
 import { MotionDiv } from "../components/animation";
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -97,6 +95,37 @@ export default function Projects({ scrollRef, setPageInView }) {
           alignContent="center"
         >
           <ProjectCard
+            imgSrc={darkBackground}
+            tags={[
+              "Typescript",
+              "React Query",
+              "Vite js",
+              "Vitest",
+              "React Router",
+            ]}
+            title="Todolists"
+            description="An application Designed to help you get organized, achieve your goals and never forget a thing"
+            livePreviewUrl="https://todolists.francispelletier.ca"
+            githubUrl="https://github.com/fpelletier-gh/todolist-ui"
+          />
+          <ProjectCard
+            imgSrc={darkBackground}
+            tags={[
+              "Typescript",
+              "Node",
+              "express",
+              "mongoDB",
+              "mongoose",
+              "Zod",
+              "Jest",
+              "Supertest",
+            ]}
+            title="Rest Api todolist"
+            description="A REST api for a todolist application"
+            livePreviewUrl="#"
+            githubUrl="https://github.com/fpelletier-gh/rest-api-todolist"
+          />
+          <ProjectCard
             imgSrc={babyJournalImg}
             tags={[
               "Python",
@@ -134,34 +163,9 @@ export default function Projects({ scrollRef, setPageInView }) {
             livePreviewUrl="https://francis-pomodoro-clock.netlify.app"
             githubUrl="https://github.com/fpelletier-gh/pomodoro-clock"
           />
-          <ProjectCard
-            imgSrc={githubFinderImg}
-            tags={["Javascript", "Bootstrap", "Webpack", "Html"]}
-            title="Github Finder"
-            description="Find Github user by username"
-            livePreviewUrl="https://githubfinder.francispelletier.ca"
-            githubUrl="https://github.com/fpelletier-gh/github-finder"
-          />
-          <ProjectCard
-            imgSrc={boxShadowGeneratorImg}
-            tags={["Javascript", "Css", "Html"]}
-            title="Box-Shadow Generator"
-            description="A simple visual tool for generating css box-shadow"
-            livePreviewUrl="https://boxshadow.francispelletier.ca"
-            githubUrl="https://github.com/fpelletier-gh/box-shadow-generator"
-          />
-          <ProjectCard
-            imgSrc={noteAppImg}
-            tags={["Javascript", "React", "Gatsby", "Sass", "Html", "Pwa"]}
-            title="Note App"
-            description="A simple note taking application (Pwa) built with Gatsby"
-            livePreviewUrl="https://noteapp.francispelletier.ca"
-            githubUrl="https://github.com/fpelletier-gh/note-app"
-          />
         </SimpleGrid>
         <Text textAlign="center" fontSize="1.2rem" pt="5rem" px={[6, 10]}>
-          For more projects, this portfolio source code, my linux and neovim
-          configs, visit my{" "}
+          For more projects and this portfolio source code visit my{" "}
         </Text>
         <Heading as="h3" size="lg">
           <ActiveLink href="https://github.com/fpelletier-gh" variant="ghLink">
