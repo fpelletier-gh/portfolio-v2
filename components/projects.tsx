@@ -11,7 +11,8 @@ import ActiveLink from "./activeLink";
 import babyJournalImg from "../public/baby-journal.jpg";
 import pomodoroClockImg from "../public/pomodoro-clock.jpg";
 import wdNotesImg from "../public/wd-notes.jpg";
-import darkBackground from "../public/dark_background.jpg";
+import todolistUiImg from "../public/todolist-ui.jpg";
+import restApiTodolistImg from "../public/rest-api-todolist.jpg";
 import { MotionDiv } from "../components/animation";
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -61,7 +62,7 @@ export default function Projects({ scrollRef, setPageInView }) {
         ref={ref}
         initial="hidden"
         animate={controlAnimation}
-        transition={{ duration: "1" }}
+        transition={{ duration: "0.5" }}
         variants={variants}
         display="flex"
         flexDir="column"
@@ -95,7 +96,7 @@ export default function Projects({ scrollRef, setPageInView }) {
           alignContent="center"
         >
           <ProjectCard
-            imgSrc={darkBackground}
+            imgSrc={todolistUiImg}
             tags={[
               "Typescript",
               "React Query",
@@ -109,7 +110,7 @@ export default function Projects({ scrollRef, setPageInView }) {
             githubUrl="https://github.com/fpelletier-gh/todolist-ui"
           />
           <ProjectCard
-            imgSrc={darkBackground}
+            imgSrc={restApiTodolistImg}
             tags={[
               "Typescript",
               "Node",
@@ -121,8 +122,8 @@ export default function Projects({ scrollRef, setPageInView }) {
               "Supertest",
             ]}
             title="Rest Api todolist"
-            description="A REST api for a todolist application"
-            livePreviewUrl="#"
+            description="A REST api for a todolist application with JWT authentication"
+            livePreviewUrl="https://github.com/fpelletier-gh/todolist-ui"
             githubUrl="https://github.com/fpelletier-gh/rest-api-todolist"
           />
           <ProjectCard
