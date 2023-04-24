@@ -30,7 +30,13 @@ import {
   DiGithubFull,
   DiDigitalOcean,
 } from "react-icons/di";
-import { SiTypescript, SiNextdotjs } from "react-icons/si";
+import {
+  SiTypescript,
+  SiNextdotjs,
+  SiMongodb,
+  SiVite,
+  SiJest,
+} from "react-icons/si";
 import { RiGatsbyFill } from "react-icons/ri";
 
 const BoxedIcon = ({ icon, tooltip, ...props }) => {
@@ -109,6 +115,9 @@ export default function TechIcons() {
           <BoxedIcon icon={DiDjango} color={djangoGreen} tooltip="Django" />
           <BoxedIcon icon={DiSass} color="#C76494" tooltip="Sass" />
           <BoxedIcon icon={DiPostgresql} color="#31648C" tooltip="Postgresql" />
+          <BoxedIcon icon={SiMongodb} color="#00e15f" tooltip="MongoDB" />
+          <BoxedIcon icon={SiVite} color="#6790f0" tooltip="Vite js" />
+          <BoxedIcon icon={SiJest} color="#913f56" tooltip="Jest" />
           <BoxedIcon icon={DiGit} color="#E84D31" tooltip="Git" />
           <BoxedIcon icon={DiGithubFull} color={black} tooltip="Github" />
           <BoxedIcon icon={DiNodejsSmall} color="#73AA60" tooltip="Node js" />
