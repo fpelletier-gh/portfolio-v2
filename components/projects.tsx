@@ -123,7 +123,7 @@ export default function Projects({ scrollRef, setPageInView }) {
             ]}
             title="Rest Api todolist"
             description="A REST api for a todolist application with JWT authentication"
-            livePreviewUrl="https://github.com/fpelletier-gh/todolist-ui"
+            livePreviewUrl="https://api-todolists.francispelletier.ca/api-docs/#/"
             githubUrl="https://github.com/fpelletier-gh/rest-api-todolist"
           />
           <ProjectCard
